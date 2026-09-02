@@ -1,0 +1,24 @@
+{
+  "name": "webapp",
+  "version": "1.0.0",
+  "description": "Site Web www.gvcoop.org",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lesgrandsvoisins/gvcooporg.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/lesgrandsvoisins/gvcooporg/issues"
+  },
+  "homepage": "https://github.com/lesgrandsvoisins/gvcooporg#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  }
+}

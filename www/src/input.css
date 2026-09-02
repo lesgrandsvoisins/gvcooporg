@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    /* --- Structure globale --- */
+    .page-fondation {
+        @apply bg-brand-light text-brand-dark antialiased font-sans flex flex-col min-h-screen;
+    }
+
+    /* --- En-tête & Navigation (L'Agora) --- */
+    .en-tete-agora {
+        @apply bg-white shadow-sm sticky top-0 z-50;
+    }
+    .navigation-commune {
+        @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between;
+    }
+    .logo-solidaire {
+        @apply text-2xl font-extrabold text-brand-dark tracking-tight;
+    }
+    .etiquette-valeur {
+        @apply hidden md:inline-block text-sm font-semibold text-brand-primary bg-brand-primary/10 px-3 py-1 rounded-full;
+    }
+    .menu-bureau {
+        @apply hidden md:flex space-x-8 items-center;
+    }
+    .lien-navigation {
+        @apply text-lg font-semibold hover:text-brand-primary transition;
+    }
+    .bouton-chantier {
+        @apply bg-brand-primary text-white px-6 py-2 rounded-full font-bold shadow-md hover:bg-orange-700 transition transform hover:scale-105;
+    }
+    .bascule-menu-mobile {
+        @apply md:hidden p-2 text-brand-dark;
+    }
+    .menu-mobile {
+        @apply md:hidden bg-white border-t;
+    }
+    .lien-navigation-mobile {
+        @apply block px-3 py-3 rounded-md text-lg font-semibold hover:bg-brand-light;
+    }
+
+    /* --- Section Héros (Le Manifeste) --- */
+    .section-manifeste {
+        @apply flex-grow;
+    }
+    .conteneur-manifeste {
+        @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 text-center;
+    }
+    .titre-manifeste {
+        @apply text-5xl md:text-6xl font-extrabold mb-6 leading-tight;
+    }
+    .emphase-manifeste {
+        @apply text-brand-primary;
+    }
+    .sous-titre-manifeste {
+        @apply mt-4 text-xl md:text-2xl max-w-3xl mx-auto text-gray-700 font-medium;
+    }
+
+    /* --- Cartes d'Actualités (Les Échos) --- */
+    .conteneur-actualites {
+        @apply flex-grow bg-st-tropaz-200 py-16;
+    }
+
+    .section-actualites {
+        @apply max-w-7xl mx-auto px-4;
+    }
+    .grille-actualites {
+        @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8;
+    }
+    .carte-projet {
+        @apply bg-white rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden flex flex-col border border-gray-100;
+    }
+    .carte-image {
+        @apply w-full h-48 object-cover;
+    }
+    .carte-contenu {
+        @apply p-6 flex flex-col flex-grow;
+    }
+    .carte-categorie {
+        @apply text-xs font-extrabold tracking-wider text-brand-primary uppercase mb-2;
+    }
+    .carte-titre {
+        @apply text-xl font-bold text-gray-900 mb-3 leading-tight;
+    }
+    .carte-extrait {
+        @apply text-gray-600 mb-6 flex-grow;
+    }
+    .carte-pied {
+        @apply flex items-center justify-between border-t border-gray-100 pt-4 mt-auto;
+    }
+    .carte-auteur {
+        @apply text-sm font-medium text-gray-500;
+    }
+    .carte-lien {
+        @apply text-brand-accent font-bold hover:text-blue-800 transition-colors;
+    }
+
+    /* --- Section Permanences (Le Rythme) --- */
+    .section-permanences {
+        @apply bg-leather-100 py-16;
+    }
+    .conteneur-permanences {
+        @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+    }
+    .titre-section {
+        @apply text-3xl font-extrabold mb-10 text-center;
+    }
+    .grille-permanences {
+        @apply grid md:grid-cols-2 gap-8;
+    }
+    .carte-atelier-conception {
+        @apply bg-sea-pink-500 p-8 rounded-3xl border-2 border-transparent hover:border-sea-pink-700 transition;
+    }
+    .etiquette-conception {
+        @apply bg-sea-pink-700 text-white inline-block px-4 py-1 rounded-full font-bold mb-4;
+    }
+    .carte-atelier-technique {
+        @apply bg-st-tropaz-500 p-8 rounded-3xl border-2 border-transparent hover:border-st-tropaz-700 transition;
+    }
+    .etiquette-technique {
+        @apply bg-st-tropaz-700 text-white inline-block px-4 py-1 rounded-full font-bold mb-4;
+    }
+    .atelier-titre {
+        @apply text-2xl text-stone-200 font-bold mb-3;
+    }
+    .atelier-description {
+        @apply text-lg text-stone-50 mb-4;
+    }
+    .atelier-liste {
+        @apply space-y-2 text-stone-300 font-semibold;
+    }
+    .atelier-element {
+        @apply flex items-center gap-2;
+    }
+
+    /* --- Pied de page (L'Ancrage) --- */
+    .pied-de-page-communautaire {
+        @apply bg-leather-800 text-white py-12 mt-auto;
+    }
+    .conteneur-pied-de-page {
+        @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left grid md:grid-cols-2 gap-8 items-center;
+    }
+    .titre-pied-de-page {
+        @apply text-2xl font-bold mb-4;
+    }
+    .texte-pied-de-page {
+        @apply text-gray-400 text-lg;
+    }
+    .titre-contact {
+        @apply font-bold text-lg mb-2;
+    }
+    .texte-contact {
+        @apply text-gray-300;
+    }
+}

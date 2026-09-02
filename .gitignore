@@ -163,6 +163,8 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+node_modules/
+www/home/static/css/output.css
 
 # Spyder project settings
 .spyderproject
