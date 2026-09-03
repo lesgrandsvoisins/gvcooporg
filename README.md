@@ -4,6 +4,16 @@ Site Web www.gvcoop.org
 
 Nouveau site [wagtail.org](https://wagtail.org) destiné à [www.gvcoop.org](https://www.gvcoop.org).
 
+## Tailwind (erreur)
+
+```bash
+│ Error: Cannot apply unknown utility class `bg-brand-light`. Are you using CSS modules or similar and missing `@reference`? https://tailwindcss.com/docs/functions-and-directives#reference-directive
+```
+
+
+## Scripts d'installation
+
+Les scripts sont dans les Makefile
 
 Migrations : 
 

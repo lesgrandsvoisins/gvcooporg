@@ -1,12 +1,32 @@
-@tailwind base;
+@import "tailwindcss";
+
+@theme {
+  --color-brand-light: #fff8ee;
+  --color-brand-dark: #292524;
+  --color-brand-primary: #ea580c;
+  --color-brand-accent: #2563eb;
+
+  --color-st-tropaz-200: #bfdbfe;
+  --color-st-tropaz-500: #3b82f6;
+  --color-st-tropaz-700: #1d4ed8;
+
+  --color-leather-100: #f5ede3;
+  --color-leather-800: #422006;
+
+  --color-sea-pink-500: #ec4899;
+  --color-sea-pink-700: #be185d;
+}
+
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
 @layer components {
     /* --- Structure globale --- */
     .page-fondation {
         @apply bg-brand-light text-brand-dark antialiased font-sans flex flex-col min-h-screen;
     }
+    
 
     /* --- En-tête & Navigation (L'Agora) --- */
     .en-tete-agora {

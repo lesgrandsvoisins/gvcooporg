@@ -19,6 +19,9 @@
   },
   "homepage": "https://github.com/lesgrandsvoisins/gvcooporg#readme",
   "devDependencies": {
-    "tailwindcss": "^3.4.19"
+    "tailwindcss": "^4.3.3"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.3"
   }
 }

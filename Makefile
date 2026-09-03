@@ -4,6 +4,9 @@ runserver:
 migrations:
 	make -C ./www migrations
 
+tailwind-compile:
+	make -C ./www tailwind-compile
+
 init:
 	python -m venv .venv
 	.venv/bin/pip install wagtail

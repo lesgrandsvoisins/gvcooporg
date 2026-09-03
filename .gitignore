@@ -1,7 +1,7 @@
 # Chris adds
 .venv
 *.sqlite3
-
+/static
 
 
 
