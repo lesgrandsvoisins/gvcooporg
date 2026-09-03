@@ -10,6 +10,8 @@ STORAGES["staticfiles"]["BACKEND"] = "django.contrib.staticfiles.storage.Manifes
 
 ALLOWED_HOSTS = ['www.gvcoop.org', '://www.gvcoop.org', 'gvcoop.org', '://gvcoop.org', '192.168.122.2', '192.168.122.1', '127.0.0.1', 'localhost']
 
+STATIC_ROOT = "/var/www/wagtailgvcoop/static"
+MEDIA_ROOT = "/var/www/wagtailgvcoop/media"
 
 try:
     from .local import *
